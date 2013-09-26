@@ -8,7 +8,7 @@
 
 #import "AssertionCategories.h"
 
-@implementation NSObject (AssertionCategories)
+@implementation NSDictionary (AssertionCategories)
 
 - (id)objectForKey:(id)aKey ofClass:(NSString *)aClassName;
 {

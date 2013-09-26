@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Danny Ricciotti. All rights reserved.
 //
 
-@interface NSObject (AssertionCategories)
+@interface NSDictionary (AssertionCategories)
 
 - (id)objectForKey:(id)aKey ofClass:(NSString *)aClassName;
 - (id)objectForKey:(id)aKey ofClass:(NSString *)aClassName mustExist:(BOOL)mustExist;

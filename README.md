@@ -3,11 +3,11 @@
 ```objective-c
 
 NSString *userid = [JSONResponse objectForKey:@"userid"];
-NSInteger userIdLength = [userid length];  // <--- What happens here if userid is REALLY a NSNumber
+NSInteger userIdLength = [userid length];  // <--- What happens here if userid is REALLY a NSNumber?
 
 ```
 
-Sometimes objects in your JSON response (or any objects inside an Array, Dictionary, or Set) may not be the Class type you expected!  A strict approach to protecting against crashes (or even worse unexpected values) is to be very strict about the class of objects returned as 'id'. 
+Sometimes objects in your JSON response (or objects inside any array, dictionary, or set) may not be the class type you expected!  A strict approach to protecting against crashes (or even worse unexpected values) is to be very strict about the class of objects returned. 
 
 #### The solution: ####
 

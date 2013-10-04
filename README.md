@@ -2,8 +2,8 @@
 
 ```objective-c
 
-NSNumber *userid = [JSONResponse objectForKey:@"userid"];
-NSInteger userIdInt = [userid integerValue];  // <--- What happens here if userid is REALLY a NSString
+NSString *userid = [JSONResponse objectForKey:@"userid"];
+NSInteger userIdLength = [userid length];  // <--- What happens here if userid is REALLY a NSNumber
 
 ```
 
@@ -15,9 +15,9 @@ Use assertion statements to immediately catch whenever the class of the object b
 
 ```objective-c
 
-NSNumber *userid = [JSONResponse objectForKey:@"userid" ofClass:@"NSNumber"];  // <--- Breakpoint + Exception in DEBUG build
+NSString *userid = [JSONResponse objectForKey:@"userid" ofClass:@"NSString"];  // <--- Breakpoint + Exception in DEBUG build
 
-NSInteger userIdInt = [userid integerValue];
+NSInteger userIdLength = [userid length];
 
 ```
 

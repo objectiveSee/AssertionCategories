@@ -11,6 +11,8 @@ Sometimes objects in your JSON response (or any objects inside an Array, Diction
 
 #### The solution: ####
 
+Use assertion statements to immediately catch whenever the class of the object being returned in not what you expected it to be.
+
 ```objective-c
 
 NSNumber *userid = [JSONResponse objectForKey:@"userid" ofClass:@"NSNumber"];  // <--- Breakpoint + Exception in DEBUG build
